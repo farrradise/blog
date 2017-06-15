@@ -25,13 +25,47 @@
         </div>
 
         <!-- premier formulaire de recherche -->
-        <form action="">
+        <form action="" method="get">
 
+          <select name="publication">
+            <option value="publication" selected>Publication</option>
+            <option value="-7jours">- 1 semaine</option>
+            <option value="-14jours">- de 2 semaines</option>
+            <option value="-1mois">- 1 mois</option>
+            <option value="1-3mois">1 à 3 mois</option>
+            <option value="3-6mois">3 à 6 mois</option>
+            <option value="6-12mois">6 à 12 mois</option>
+            <option value="archives">les archives</option>
+          </select>
+
+          <select name="catégorie">
+            <option value="categorie" selected>Catégories</option>
+            <option value="CSS">#CSS</option>
+            <option value="design">#design</option>
+            <option value="framework">#framework</option>
+            <option value="fun">#FUN</option>
+            <option value="html">#HTML</option>
+            <option value="javascript">#JS</option>
+            <option value="materialize">#materialize</option>
+            <option value="news">#NEWS</option>
+            <option value="tuto">#TUTO</<option>
+          </select>
+
+          <select name="auteur">
+            <option value="auteur" selected>Auteur</option>
+            <option value="Auteur1">Pierre</option>
+            <option value="Auteur1">Paul</option>
+            <option value="Auteur1">Jacques</option>
+          </select>
+
+          <button type="button" name="button">OK</button>
         </form>
 
-
+        <p>ou</p>
         <!-- formulaire tirage au sort aléatoire  -->
-        <form action=""></form>
+        <form action="" method="get">
+          <button type="button" name="button">J'ai du temps à perdre!</button>
+        </form>
 
 
         <!-- div we are social -->
@@ -83,7 +117,7 @@
 
       <!-- ecriture du footer  -->
       <footer>
-
+ <!-- y mettre les secondes, une rubrique contact + date du jour  -->
       </footer>
 
 
