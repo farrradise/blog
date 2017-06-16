@@ -122,7 +122,8 @@ header {
       font-size: 30px; }
     header #rechercheModal .modal-content {
       background-color: inherit;
-      border: none; }
+      border: none;
+      font-weight: bold; }
       header #rechercheModal .modal-content p {
         text-align: center;
         color: white;
@@ -143,6 +144,32 @@ main {
   padding-top: 3em;
   position: relative; }
   main article figure {
-    margin: 0; }
+    transition: 1s;
+    margin: 0;
+    position: relative; }
+    main article figure img {
+      filter: grayscale(80%); }
+    main article figure figcaption {
+      display: block;
+      transition: 1s;
+      background-color: white;
+      opacity: 0.5;
+      position: absolute;
+      overflow: hidden;
+      height: 40%;
+      bottom: 0;
+      max-width: 100%; }
+      main article figure figcaption * {
+        color: black;
+        opacity: 1; }
+  main article a:hover figure {
+    overflow: hidden; }
+  main article a:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    transition: 0.5s; }
+  main article a:hover figcaption {
+    opacity: 0;
+    transition: 0.5s; }
 
 /*# sourceMappingURL=main.css.map */
