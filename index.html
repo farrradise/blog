@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Tic & Tec | des tic et des techs </title>
-        <meta name="description" content="Blog sur les technologies orientées front">
+        <title>Tic & Tec | toute l'innovation côté front </title>
+        <meta name="description" content="Blog sur les technologies web orientées front">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -21,7 +21,7 @@
       <header>
         <div class="">
           <h1>TIC & TEC</h1>
-          <h2>Des tic et des techs</h2>
+          <h2>Toute l'innovation côté front</h2>
         </div>
 
         <!-- premier formulaire de recherche -->
@@ -61,10 +61,13 @@
           <button type="button" name="button">OK</button>
         </form>
 
+
         <p>ou</p>
+
+
         <!-- formulaire tirage au sort aléatoire  -->
         <form action="" method="get">
-          <button type="button" name="button">J'ai du temps à perdre!</button>
+          <button type="button" name="buttonrandom">J'ai du temps à perdre!</button>
         </form>
 
 
@@ -73,61 +76,109 @@
           <ul>
             <li><a href="www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <li><a href="www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="www.linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="www.linkedin.fr"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
           </ul>
         </div>
+
+
+        <!-- ECRITURE DU NAV -->
+        <nav class="navbar navbar-toggleable-sm">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">LATEST</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/design.html">DESIGN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/html.html">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/css.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/javascript.html">JS</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
       </header>
 
 
 
-      <!-- ECRITURE DU NAV -->
-      <nav>
-
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#latest" role="tab" aria-controls="home">LATEST</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#design" role="tab" aria-controls="profile">DESIGN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#html" role="tab" aria-controls="messages">HTML</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#css" role="tab" aria-controls="settings">CSS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#javascript" role="tab" aria-controls="settings">JS</a>
-          </li>
-        </ul>
-
-      </nav>
 
 
-      <!-- écriture de la partie principale (latest) -->
-      <main class="tab-content">
-        <div class="tab-pane fade show active" id="latest" role="tabpanel">Latest</div>
-        <div class="tab-pane fade" id="design" role="tabpanel">Design</div>
-        <div class="tab-pane fade" id="html" role="tabpanel">HTML</div>
-        <div class="tab-pane fade" id="css" role="tabpanel">CSS</div>
-        <div class="tab-pane fade" id="javascript" role="tabpanel">Javascript</div>
+
+      <!-- écriture de la partie principale -->
+      <main id="derniersbillets">
+
+        <article>
+          <a href="html/article-n.html">
+            <figure>
+              <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 575px) 100vw, 30vw" alt="Clic !">
+              <figcaption>
+                <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
+                <h2>SHADOW, l'ordinateur dans le cloud</h2>
+                <h3>Cocorico, un beau pari de chez nous</h3>
+                <p>
+                  <span class="comm-art">... commentaires</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
+                </p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+
+        <article>
+          <a href="html/article-n.html">
+            <figure>
+              <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 575px) 100vw, 30vw" alt="Clic !">
+              <figcaption>
+                <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
+                <h2>SHADOW, l'ordinateur dans le cloud</h2>
+                <h3>Cocorico, un beau pari de chez nous</h3>
+                <p>
+                  <span class="comm-art">... commentaires</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
+                </p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+
+        <article>
+          <a href="html/article-n.html">
+            <figure>
+              <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 575px) 100vw, 30vw" alt="Clic !">
+              <figcaption>
+                <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
+                <h2>SHADOW, l'ordinateur dans le cloud</h2>
+                <h3>Cocorico, un beau pari de chez nous</h3>
+                <p>
+                  <span class="comm-art">... commentaires</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
+                </p>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+
+
       </main>
 
 
       <!-- ecriture du footer  -->
       <footer>
- <!-- y mettre les secondes, une rubrique contact + date du jour  -->
+ <!-- y mettre les secondes, une rubrique contact + date du jour avec un tabs  -->
       </footer>
 
 
-
-
-      <!-- <script>
-        $(function () {
-          $('#myTab a:last').tab('show')
-        })
-      </script> -->
 
 
         <script src="js/plugins.js"></script>
