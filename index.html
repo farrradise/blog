@@ -32,6 +32,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navigation">
+
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">LATEST</a>
@@ -50,62 +51,74 @@
                 </li>
               </ul>
 
-              <button type="button" data-toggle="modal" data-target="#rechercheModal">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button>
 
-              <div class="formz">
-
-                <!-- premier formulaire de recherche -->
-                <form action="" method="get">
-
-                  <select name="publication">
-                    <option value="publication" selected>Publication</option>
-                    <option value="-7jours">- 1 semaine</option>
-                    <option value="-14jours">- de 2 semaines</option>
-                    <option value="-1mois">- 1 mois</option>
-                    <option value="1-3mois">1 à 3 mois</option>
-                    <option value="3-6mois">3 à 6 mois</option>
-                    <option value="6-12mois">6 à 12 mois</option>
-                    <option value="archives">les archives</option>
-                  </select>
-
-                  <select name="catégorie">
-                    <option value="categorie" selected>Catégories</option>
-                    <option value="CSS">#CSS</option>
-                    <option value="design">#design</option>
-                    <option value="framework">#framework</option>
-                    <option value="fun">#FUN</option>
-                    <option value="html">#HTML</option>
-                    <option value="javascript">#JS</option>
-                    <option value="materialize">#materialize</option>
-                    <option value="news">#NEWS</option>
-                    <option value="tuto">#TUTO</<option>
-                  </select>
-
-                  <select name="auteur">
-                    <option value="auteur" selected>Auteur</option>
-                    <option value="Auteur1">Pierre</option>
-                    <option value="Auteur1">Paul</option>
-                    <option value="Auteur1">Jacques</option>
-                  </select>
-
-                  <button type="button" name="button">OK</button>
-                </form>
+              <!-- début du modal pour les formulaires de recherche -->
+              <i type="button" data-toggle="modal" data-target="#rechercheModal" data-backdrop="false" class="fa fa-search" aria-hidden="true"></i>
 
 
-                <p>ou</p>
+              <!-- début du contenu du modal  -->
+              <div class="formz modal fade" id="rechercheModal" tabindex="-1" role="dialog" aria-hidden="true">
+
+                <div class="modal-dialog" role="document">
+
+                  <div class="modal-content">
+
+                    <!-- premier formulaire de recherche -->
+                    <form action="" method="get">
+
+                      <select name="publication">
+                        <option value="publication" selected>Publication</option>
+                        <option value="-7jours">- 1 semaine</option>
+                        <option value="-14jours">- de 2 semaines</option>
+                        <option value="-1mois">- 1 mois</option>
+                        <option value="1-3mois">1 à 3 mois</option>
+                        <option value="3-6mois">3 à 6 mois</option>
+                        <option value="6-12mois">6 à 12 mois</option>
+                        <option value="archives">les archives</option>
+                      </select>
+
+                      <select name="catégorie">
+                        <option value="categorie" selected>Catégories</option>
+                        <option value="CSS">#CSS</option>
+                        <option value="design">#design</option>
+                        <option value="framework">#framework</option>
+                        <option value="fun">#FUN</option>
+                        <option value="html">#HTML</option>
+                        <option value="javascript">#JS</option>
+                        <option value="materialize">#materialize</option>
+                        <option value="news">#NEWS</option>
+                        <option value="tuto">#TUTO</<option>
+                      </select>
+
+                      <select name="auteur">
+                        <option value="auteur" selected>Auteur</option>
+                        <option value="Auteur1">Pierre</option>
+                        <option value="Auteur1">Paul</option>
+                        <option value="Auteur1">Jacques</option>
+                      </select>
+
+                      <button type="button" name="button">OK</button>
+
+                    </form>
 
 
-                <!-- formulaire tirage au sort aléatoire  -->
-                <form action="" method="get">
-                  <button type="button" name="buttonrandom">J'ai du temps à perdre!</button>
-                </form>
+                    <p>ou</p>
+
+
+                    <!-- formulaire tirage au sort aléatoire  -->
+                    <form action="" method="get">
+                      <button type="button" name="buttonrandom">J'ai du temps à perdre!</button>
+                    </form>
+
+                  </div>
+
+                </div>
+                <!-- fin des formulaires de recherches  -->
 
               </div>
-              <!-- fin des formulaires de recherches  -->
 
             </div>
+
           </nav>
 
 
@@ -118,11 +131,12 @@
         </div>
 
         <div class="titrage">
+
           <h1>TIC <br> & <br>TEC</h1>
           <h2>Votre veille web côté front</h2>
         </div>
 
-        <img class="hidden-md-up bgpourxs" src="img/bg-xs.jpg" alt="img de fond"/>
+        <img class="hidden-md-up bgpourxs" src="img/bg-xs.jpg" alt="img de fond femme qui mime des jumelles avec ses mains"/>
 
 
       </header>
@@ -134,15 +148,15 @@
 
       <!-- écriture de la partie principale -->
       <main id="derniersbillets">
-
+        <h2 style="color:black"> Derniers articles</h2>
         <article>
           <a href="html/article-n.html">
             <figure>
               <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 575px) 100vw, 30vw" alt="Clic !">
               <figcaption>
                 <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
-                <h2>SHADOW, l'ordinateur dans le cloud</h2>
-                <h3>Cocorico, un beau pari de chez nous</h3>
+                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+                <h4>Cocorico, un beau pari de chez nous</h4>
                 <p>
                   <span class="comm-art">... commentaires</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
                 </p>
@@ -158,8 +172,8 @@
               <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 575px) 100vw, 30vw" alt="Clic !">
               <figcaption>
                 <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
-                <h2>SHADOW, l'ordinateur dans le cloud</h2>
-                <h3>Cocorico, un beau pari de chez nous</h3>
+                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+                <h4>Cocorico, un beau pari de chez nous</h4>
                 <p>
                   <span class="comm-art">... commentaires</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
                 </p>
@@ -175,8 +189,8 @@
               <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 575px) 100vw, 30vw" alt="Clic !">
               <figcaption>
                 <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
-                <h2>SHADOW, l'ordinateur dans le cloud</h2>
-                <h3>Cocorico, un beau pari de chez nous</h3>
+                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+                <h4>Cocorico, un beau pari de chez nous</h4>
                 <p>
                   <span class="comm-art">... commentaires</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
                 </p>
@@ -198,9 +212,9 @@
 
 
 
-        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
         <script src="js/bootstrap.js"></script>
 
     </body>
