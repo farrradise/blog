@@ -4,25 +4,44 @@ li {
 a {
   color: inherit; }
 
+@font-face {
+  font-family: "Wild";
+  src: url("../font/Wild.ttf"); }
 #homepage header {
   background-color: #9ac880;
-  height: 128vh;
+  height: 100vh;
   color: white; }
   #homepage header .fixedpart {
     z-index: 3;
     width: 100vw;
     position: fixed;
-    margin: 0;
     background-color: #9ac880;
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
+    #homepage header .fixedpart i {
+      font-size: 25px; }
     #homepage header .fixedpart .wrsocial {
       display: flex;
-      width: 120px; }
+      width: 120px;
+      margin: 5px 15px 0 0; }
       #homepage header .fixedpart .wrsocial li {
-        margin: 0 10px; }
+        margin: 10px; }
   #homepage header .titrage {
     position: fixed;
-    z-index: 1; }
+    width: 100%;
+    z-index: 1;
+    text-align: center; }
+    #homepage header .titrage h1 {
+      font-size: 35px;
+      letter-spacing: 5px;
+      border: 3px double white;
+      width: 150px;
+      padding: 8px;
+      line-height: 30px;
+      margin: 2.5em auto 0px auto; }
+    #homepage header .titrage h2 {
+      font-family: "Wild";
+      font-size: 55px; }
   #homepage header .formz {
     color: black;
     position: absolute;
