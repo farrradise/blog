@@ -7,47 +7,83 @@ a {
 @font-face {
   font-family: "Wild";
   src: url("../font/Wild.ttf"); }
-#homepage header {
+header {
   background-color: #9ac880;
   height: 100vh;
   color: white;
   display: flex;
   flex-flow: column; }
-  #homepage header > img {
+  header > img {
     margin: auto !important;
     align-self: center;
     max-height: 250px;
     max-width: 380px; }
-  #homepage header .fixedpart {
-    z-index: 3;
+  header .fixedpart {
+    z-index: 5;
     width: 100vw;
     position: fixed;
     background-color: #9ac880;
     display: flex;
     justify-content: space-between;
     min-height: 50px; }
-    #homepage header .fixedpart nav button {
-      left: 0; }
-    #homepage header .fixedpart i {
+    header .fixedpart #navigation > i {
+      font-size: 22px;
+      width: 200px;
+      margin-top: 10px;
+      border-top: 2px solid white;
+      line-height: 25px;
+      color: #eb5a46; }
+      header .fixedpart #navigation > i span {
+        font-family: "Wild";
+        color: white;
+        padding-left: 24px;
+        font-size: 2.5em;
+        position: relative;
+        top: 0px; }
+    header .fixedpart #navigation ul {
+      margin: 40px auto auto 5px; }
+      header .fixedpart #navigation ul .h1dansul {
+        font-size: 27px;
+        width: 140px;
+        position: absolute;
+        top: 5px;
+        left: 55px;
+        letter-spacing: 2px; }
+        header .fixedpart #navigation ul .h1dansul span {
+          font-weight: bold;
+          font-size: 18px; }
+      header .fixedpart #navigation ul .nav-item:hover {
+        font-weight: bolder;
+        border-left: 2px solid white;
+        margin-left: -10px;
+        padding-left: 8px; }
+        header .fixedpart #navigation ul .nav-item:hover a {
+          color: inherit; }
+    header .fixedpart nav button {
+      left: 0;
+      color: #eb5a46; }
+    header .fixedpart i {
       transition: 0.2s;
       font-size: 25px; }
-    #homepage header .fixedpart .wrsocial {
+    header .fixedpart .wrsocial {
       display: flex;
+      position: absolute;
+      right: 0;
       width: 120px;
-      margin: 5px 40px 0 0; }
-      #homepage header .fixedpart .wrsocial li {
+      margin: 5px 12% 0 0; }
+      header .fixedpart .wrsocial li {
         margin: 10px; }
-      #homepage header .fixedpart .wrsocial a:hover {
-        color: inherit; }
-        #homepage header .fixedpart .wrsocial a:hover i {
+      header .fixedpart .wrsocial a:hover {
+        color: #eb5a46; }
+        header .fixedpart .wrsocial a:hover i {
           transition: 0.2s;
           transform: scale(1.2); }
-  #homepage header .titrage {
+  header .titrage {
     position: fixed;
     width: 100%;
     z-index: 1;
     text-align: center; }
-    #homepage header .titrage h1 {
+    header .titrage h1 {
       font-size: 35px;
       letter-spacing: 5px;
       border: 3px double white;
@@ -55,27 +91,56 @@ a {
       padding: 8px;
       line-height: 30px;
       margin: 2.5em auto 5px auto; }
-    #homepage header .titrage h2 {
+    header .titrage h2 {
       font-family: "Wild";
-      font-size: 55px; }
-  #homepage header .formz {
+      font-size: 58px;
+      color: #eb5a46; }
+  header .formz {
     color: black;
     position: absolute;
     background-color: white;
     bottom: -28vh;
     z-index: 2; }
-  #homepage header .bgpourxs {
+  header .bgpourxs {
     width: 100%;
     position: absolute;
     bottom: 0;
     height: auto;
     z-index: 3; }
+  header #rechercheModal {
+    width: 80vw;
+    max-width: 400px;
+    height: 310px;
+    margin: 50px auto;
+    padding-top: 15px;
+    background-color: #eb5a46;
+    border-radius: 20px; }
+    header #rechercheModal > div > button {
+      text-align: center;
+      padding: 10px 20px;
+      color: white;
+      font-size: 30px; }
+    header #rechercheModal .modal-content {
+      background-color: inherit;
+      border: none; }
+      header #rechercheModal .modal-content p {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding: 10px 0 0 0; }
+      header #rechercheModal .modal-content form {
+        margin: auto;
+        display: flex;
+        flex-flow: column; }
+        header #rechercheModal .modal-content form select {
+          width: 200px;
+          color: #eb5a46; }
 
 main {
   width: 100vw;
   background-color: white;
   z-index: 2;
-  margin-top: 3em;
+  padding-top: 3em;
   position: relative; }
   main article figure {
     margin: 0; }

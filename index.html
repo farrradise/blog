@@ -27,6 +27,7 @@
 
           <!-- ECRITURE DU NAV -->
           <nav class="navbar navbar-toggleable-sm">
+
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fa fa-bars navbar-toggle-icon" aria-hidden="true"></i>
             </button>
@@ -34,6 +35,7 @@
             <div class="collapse navbar-collapse" id="navigation">
 
               <ul class="navbar-nav mr-auto">
+                <li class="h1dansul"> TIC<span>&</span>TEC</li>
                 <li class="nav-item">
                   <a class="nav-link active" href="#">LATEST</a>
                 </li>
@@ -53,18 +55,18 @@
 
 
               <!-- début du modal pour les formulaires de recherche -->
-              <i type="button" data-toggle="modal" data-target="#rechercheModal" data-backdrop="false" class="fa fa-search" aria-hidden="true"></i>
+              <i type="button" data-toggle="modal" data-target="#rechercheModal" data-backdrop="false" class="fa fa-search" aria-hidden="true"> <span>recherche</span></i>
 
 
               <!-- début du contenu du modal  -->
-              <div class="formz modal fade" id="rechercheModal" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal fade" id="rechercheModal" tabindex="-1" role="dialog" aria-hidden="true">
 
                 <div class="modal-dialog" role="document">
 
                   <div class="modal-content">
 
                     <!-- premier formulaire de recherche -->
-                    <form action="" method="get">
+                    <form class="form1" action="" method="get">
 
                       <select name="publication">
                         <option value="publication" selected>Publication</option>
@@ -102,7 +104,7 @@
                     </form>
 
 
-                    <p>ou</p>
+                    <p>OU</p>
 
 
                     <!-- formulaire tirage au sort aléatoire  -->
@@ -110,7 +112,12 @@
                       <button type="button" name="buttonrandom">J'ai du temps à perdre!</button>
                     </form>
 
+
                   </div>
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
 
                 </div>
                 <!-- fin des formulaires de recherches  -->
