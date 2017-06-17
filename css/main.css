@@ -196,4 +196,25 @@ main {
     opacity: 0;
     transition: 0.5s; }
 
+footer {
+  color: white;
+  font-size: 12px;
+  background-color: #9ac880;
+  border: 1px solid #9ac880;
+  text-align: center;
+  padding: 15px 0 5px 0; }
+  footer p span {
+    color: #eb5a46;
+    font-weight: bold;
+    font-style: italic; }
+  footer .nav {
+    margin: auto;
+    width: 100px; }
+    footer .nav .nav-item .active {
+      background-color: #eb5a46; }
+    footer .nav .active:hover i {
+      color: white; }
+    footer .nav .nav-link:hover {
+      color: #eb5a46; }
+
 /*# sourceMappingURL=main.css.map */
