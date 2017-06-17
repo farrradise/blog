@@ -141,8 +141,12 @@ main {
   width: 100vw;
   background-color: white;
   z-index: 2;
-  padding-top: 3em;
   position: relative; }
+  main h2 {
+    color: #eb5a46;
+    font-family: "Wild";
+    font-size: 65px;
+    text-align: center; }
   main article figure {
     transition: 1s;
     margin: 0;
@@ -150,15 +154,35 @@ main {
     main article figure img {
       filter: grayscale(80%); }
     main article figure figcaption {
-      display: block;
       transition: 1s;
       background-color: white;
-      opacity: 0.5;
+      opacity: 0.8;
+      padding: 5px 2px;
       position: absolute;
       overflow: hidden;
       height: 40%;
       bottom: 0;
-      max-width: 100%; }
+      width: 100%;
+      color: black; }
+      main article figure figcaption h3 {
+        height: 30px;
+        min-width: 100%;
+        font-size: 20px;
+        margin: 5px 0; }
+      main article figure figcaption h4 {
+        display: none; }
+      main article figure figcaption .details-article {
+        width: 100%;
+        padding-top: 5px;
+        display: flex;
+        justify-content: space-between; }
+        main article figure figcaption .details-article p {
+          color: #eb5a46; }
+        main article figure figcaption .details-article span {
+          color: inherit;
+          font-size: 12px; }
+        main article figure figcaption .details-article p:last-of-type {
+          font-style: italic; }
       main article figure figcaption * {
         color: black;
         opacity: 1; }
