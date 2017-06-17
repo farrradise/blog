@@ -7,17 +7,22 @@ a {
 @font-face {
   font-family: "Wild";
   src: url("../font/Wild.ttf"); }
-header {
-  background-color: #9ac880;
-  height: 100vh;
-  color: white;
-  display: flex;
-  flex-flow: column; }
-  header > img {
+#homepage header {
+  height: 100vh; }
+  #homepage header > img {
     margin: auto !important;
     align-self: center;
     max-height: 250px;
     max-width: 380px; }
+
+#general-category header {
+  height: auto; }
+
+header {
+  display: flex;
+  flex-flow: column;
+  color: white;
+  background-color: #9ac880; }
   header .fixedpart {
     z-index: 5;
     width: 100vw;
@@ -136,6 +141,9 @@ header {
         header #rechercheModal .modal-content form select {
           width: 200px;
           color: #eb5a46; }
+
+#general-category main {
+  margin-top: 3em; }
 
 main {
   width: 100vw;

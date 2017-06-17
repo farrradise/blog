@@ -1,0 +1,318 @@
+<!doctype html>
+<html class="no-js" lang="Fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Tic & Tec | toute l'innovation côté front </title>
+        <meta name="description" content="Blog sur les technologies web orientées front">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body id="general-category">
+
+      <!-- ECRITURE DU HEADER  -->
+
+      <header>
+
+
+        <!-- div we are social + menu toggle -->
+        <div class="fixedpart">
+
+
+          <!-- ECRITURE DU NAV -->
+          <nav class="navbar navbar-toggleable-sm">
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars navbar-toggle-icon" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navigation">
+
+              <ul class="navbar-nav mr-auto">
+                <li class="h1dansul"> TIC<span>&</span>TEC</li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">LATEST</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/design.html">DESIGN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/html.html">HTML</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/css.html">CSS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/javascript.html">JS</a>
+                </li>
+              </ul>
+
+
+              <!-- début du modal pour les formulaires de recherche -->
+              <i type="button" data-toggle="modal" data-target="#rechercheModal" data-backdrop="false" class="fa fa-search" aria-hidden="true"> <span>recherche</span></i>
+
+
+              <!-- début du contenu du modal  -->
+              <div class="modal fade" id="rechercheModal" tabindex="-1" role="dialog" aria-hidden="true">
+
+                <div class="modal-dialog" role="document">
+
+                  <div class="modal-content">
+
+                    <!-- premier formulaire de recherche -->
+                    <form class="form1" action="" method="get">
+
+                      <select name="publication">
+                        <option value="publication" selected>Publication</option>
+                        <option value="-7jours">- 1 semaine</option>
+                        <option value="-14jours">- de 2 semaines</option>
+                        <option value="-1mois">- 1 mois</option>
+                        <option value="1-3mois">1 à 3 mois</option>
+                        <option value="3-6mois">3 à 6 mois</option>
+                        <option value="6-12mois">6 à 12 mois</option>
+                        <option value="archives">les archives</option>
+                      </select>
+
+                      <select name="catégorie">
+                        <option value="categorie" selected>Catégories</option>
+                        <option value="CSS">#CSS</option>
+                        <option value="design">#design</option>
+                        <option value="framework">#framework</option>
+                        <option value="fun">#FUN</option>
+                        <option value="html">#HTML</option>
+                        <option value="javascript">#JS</option>
+                        <option value="materialize">#materialize</option>
+                        <option value="news">#NEWS</option>
+                        <option value="tuto">#TUTO</<option>
+                      </select>
+
+                      <select name="auteur">
+                        <option value="auteur" selected>Auteur</option>
+                        <option value="Auteur1">Pierre</option>
+                        <option value="Auteur1">Paul</option>
+                        <option value="Auteur1">Jacques</option>
+                      </select>
+
+                      <button type="button" name="button">OK</button>
+
+                    </form>
+
+
+                    <p>OU</p>
+
+
+                    <!-- formulaire tirage au sort aléatoire  -->
+                    <form action="" method="get">
+                      <button type="button" name="buttonrandom">J'ai du temps à perdre!</button>
+                    </form>
+
+
+                  </div>
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+
+                </div>
+                <!-- fin des formulaires de recherches  -->
+
+              </div>
+
+            </div>
+
+          </nav>
+
+
+          <ul class="wrsocial">
+            <li><a href="www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="www.linkedin.fr"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+
+        </div>
+
+
+      </header>
+
+
+
+
+
+
+      <!-- écriture de la partie principale -->
+      <main id="derniersbillets">
+
+        <h2> Tout sur le css</h2>
+
+        <article>
+          <a href="../html/article-n.html">
+            <figure>
+              <img src="../img/article-n-sm" srcset="../img/article-n-sm.jpg 240w, ../img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clic !">
+              <figcaption>
+                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+                <h4>Cocorico, un beau pari de chez nous</h4>
+
+                <div class="details-article">
+
+                  <p>
+                    <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
+                  </p>
+                  <p>
+                    <span class="comm-art">... comm</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+
+        <article>
+          <a href="../html/article-n.html">
+            <figure>
+              <img src="../img/article-n-sm" srcset="../img/article-n-sm.jpg 240w, ../img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clic !">
+              <figcaption>
+                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+                <h4>Cocorico, un beau pari de chez nous</h4>
+                <div class="details-article">
+
+                  <p>
+                    <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
+                  </p>
+                  <p>
+                    <span class="comm-art">... comm</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+
+        <article>
+          <a href="../html/article-n.html">
+            <figure>
+              <img src="../img/article-n-sm" srcset="../img/article-n-sm.jpg 240w, ../img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clic !">
+              <figcaption>
+                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+                <h4>Cocorico, un beau pari de chez nous</h4>
+                <div class="details-article">
+
+                  <p>
+                    <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
+                  </p>
+                  <p>
+                    <span class="comm-art">... comm</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+        <article>
+          <a href="../html/article-n.html">
+            <figure>
+              <img src="../img/article-n-sm" srcset="../img/article-n-sm.jpg 240w, ../img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clic !">
+              <figcaption>
+                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+                <h4>Cocorico, un beau pari de chez nous</h4>
+
+                <div class="details-article">
+
+                  <p>
+                    <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
+                  </p>
+                  <p>
+                    <span class="comm-art">... comm</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+
+        <article>
+          <a href="../html/article-n.html">
+            <figure>
+              <img src="../img/article-n-sm" srcset="../img/article-n-sm.jpg 240w, ../img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clic !">
+              <figcaption>
+                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+                <h4>Cocorico, un beau pari de chez nous</h4>
+                <div class="details-article">
+
+                  <p>
+                    <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
+                  </p>
+                  <p>
+                    <span class="comm-art">... comm</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+
+        <article>
+          <a href="../html/article-n.html">
+            <figure>
+              <img src="../img/article-n-sm" srcset="../img/article-n-sm.jpg 240w, ../img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clic !">
+              <figcaption>
+                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+                <h4>Cocorico, un beau pari de chez nous</h4>
+                <div class="details-article">
+
+                  <p>
+                    <span class="hashtag">#NEWS</span> || <span class="hashtag">#FUN</span> || <span class="hashtag">#WEB</span>
+                  </p>
+                  <p>
+                    <span class="comm-art">... comm</span> - <span class="auteur-art">Par ...</span> - <span class="publi-art">Le ../../..</span>
+                  </p>
+                </div>
+              </figcaption>
+            </figure>
+          </a>
+        </article>
+
+
+
+      </main>
+
+
+      <!-- ecriture du footer  -->
+      <footer>
+        <p> blog créé par <span>@farrradise</span> | marzini.f@gmail.com</p>
+ <!-- y mettre les secondes, une rubrique contact + date du jour avec un tabs avec icone horloge/sablier et calendrier  -->
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fa fa-hourglass-end" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </a>
+          </li>
+
+        </ul>
+      </footer>
+
+
+
+
+        <script src="../js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/bootstrap.js"></script>
+
+    </body>
+</html>
