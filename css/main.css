@@ -9,7 +9,7 @@ a {
   src: url("../font/Wild.ttf"); }
 #homepage header {
   height: 100vh; }
-  #homepage header > img {
+  #homepage header .bgpourxs {
     margin: auto !important;
     align-self: center;
     max-height: 250px;
@@ -152,7 +152,7 @@ header {
 main {
   width: 100vw;
   background-color: white;
-  z-index: 2;
+  z-index: 4;
   position: relative; }
   main h2 {
     color: #eb5a46;
@@ -228,5 +228,41 @@ footer {
       color: white; }
     footer .nav .nav-link:hover {
       color: #eb5a46; }
+
+@media (min-width: 768px) {
+  #homepage header, #general-category header {
+    height: 60vh;
+    position: relative; }
+    #homepage header .bgpourxs, #general-category header .bgpourxs {
+      right: 100px;
+      position: absolute;
+      max-height: 290px;
+      max-width: 400px; }
+    #homepage header .titrage, #general-category header .titrage {
+      width: 300px;
+      left: 10%;
+      top: 10px;
+      z-index: 4;
+      position: absolute; }
+    #homepage header .fixedpart ul, #general-category header .fixedpart ul {
+      margin-top: 0; }
+      #homepage header .fixedpart ul li, #general-category header .fixedpart ul li {
+        text-align: center; }
+      #homepage header .fixedpart ul .nav-item:hover, #general-category header .fixedpart ul .nav-item:hover {
+        font-weight: normal;
+        border-left: none; }
+        #homepage header .fixedpart ul .nav-item:hover a, #general-category header .fixedpart ul .nav-item:hover a {
+          border-bottom: 2px solid white; }
+    #homepage header .fixedpart i, #general-category header .fixedpart i {
+      border-top: none;
+      width: auto;
+      margin: 6px auto auto 10px; }
+      #homepage header .fixedpart i span, #general-category header .fixedpart i span {
+        display: none; }
+    #homepage header .h1dansul, #general-category header .h1dansul {
+      display: none; }
+
+  header .fixedpart .active {
+    text-shadow: 0 0.6px 0.6px #eb5a46; } }
 
 /*# sourceMappingURL=main.css.map */
