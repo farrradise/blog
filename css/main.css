@@ -225,8 +225,20 @@ footer {
       color: #eb5a46; }
 
 @media (min-width: 768px) {
+  #homepage header {
+    height: 60vh; }
+
+  #general-category .fixedpart ul {
+    margin-left: 180px !important; }
+    #general-category .fixedpart ul .h1dansul {
+      display: block;
+      margin-top: 2px;
+      width: 160px !important;
+      text-shadow: 0px 1px 0.5px #eb5a46;
+      margin-left: -30px;
+      border-right: 2px solid white; }
+
   #homepage header, #general-category header {
-    height: 60vh;
     position: relative; }
     #homepage header .bgpourxs, #general-category header .bgpourxs {
       right: 100px;
@@ -262,21 +274,27 @@ footer {
   header .wrsocial {
     margin-right: 60px !important; }
 
+  #homepage main article {
+    width: 33.3333333%; }
+
   main {
     border-top: 3px solid #eb5a46;
-    display: flex; }
+    display: flex;
+    flex-flow: row wrap; }
     main article {
-      width: 100%; }
+      width: 50%; }
       main article a img {
         width: 100%; }
       main article a figcaption {
         padding: 7px; } }
 @media (min-width: 992px) {
-  main article a figcaption h3 {
-    color: #eb5a46; }
-  main article a figcaption h4 {
-    line-height: 10px;
-    display: block;
-    font-size: 16px; } }
+  main article {
+    width: 33.3333%; }
+    main article a figcaption h3 {
+      color: #eb5a46; }
+    main article a figcaption h4 {
+      line-height: 10px;
+      display: block;
+      font-size: 16px; } }
 
 /*# sourceMappingURL=main.css.map */
