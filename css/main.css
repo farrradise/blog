@@ -263,6 +263,23 @@ footer {
       display: none; }
 
   header .fixedpart .active {
-    text-shadow: 0 0.6px 0.6px #eb5a46; } }
+    text-shadow: 0 0.6px 0.6px #eb5a46; }
+  header .wrsocial {
+    margin-right: 60px !important; }
+
+  main {
+    border-top: 3px solid #eb5a46;
+    display: flex; }
+    main article a img {
+      width: 100%; }
+    main article a figcaption {
+      padding: 7px; } }
+@media (min-width: 992px) {
+  main article a figcaption h3 {
+    color: #eb5a46; }
+  main article a figcaption h4 {
+    line-height: 10px;
+    display: block;
+    font-size: 16px; } }
 
 /*# sourceMappingURL=main.css.map */
