@@ -154,11 +154,6 @@ main {
   background-color: white;
   z-index: 4;
   position: relative; }
-  main h2 {
-    color: #eb5a46;
-    font-family: "Wild";
-    font-size: 65px;
-    text-align: center; }
   main article figure {
     transition: 1s;
     margin: 0;
@@ -240,7 +235,7 @@ footer {
       max-width: 400px; }
     #homepage header .titrage, #general-category header .titrage {
       width: 300px;
-      left: 10%;
+      left: 15%;
       top: 10px;
       z-index: 4;
       position: absolute; }
@@ -270,10 +265,12 @@ footer {
   main {
     border-top: 3px solid #eb5a46;
     display: flex; }
-    main article a img {
+    main article {
       width: 100%; }
-    main article a figcaption {
-      padding: 7px; } }
+      main article a img {
+        width: 100%; }
+      main article a figcaption {
+        padding: 7px; } }
 @media (min-width: 992px) {
   main article a figcaption h3 {
     color: #eb5a46; }
