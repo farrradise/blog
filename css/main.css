@@ -124,7 +124,7 @@ header {
 #rechercheModal, #rechercheModal1 {
   width: 80vw;
   max-width: 400px;
-  height: 310px;
+  height: 350px;
   margin: 50px auto;
   padding-top: 15px;
   background-color: #eb5a46;
@@ -248,6 +248,14 @@ main {
   #art .article-content {
     padding: 15px;
     text-align: justify; }
+    #art .article-content img:first-of-type {
+      max-width: 170px;
+      display: flex;
+      margin: auto; }
+    #art .article-content img {
+      max-width: 400px;
+      display: flex;
+      margin: auto auto 1em auto !important; }
     #art .article-content span {
       color: #eb5a46;
       font-weight: bold; }
@@ -258,7 +266,8 @@ main {
       margin-bottom: 0.5em;
       padding-bottom: 0.3em; }
     #art .article-content h4 {
-      font-size: 20px; }
+      font-size: 20px;
+      text-align: center; }
     #art .article-content > p:first-of-type {
       font-style: italic;
       background-color: #eb5a46;
@@ -364,6 +373,24 @@ footer {
     text-shadow: 0 0.6px 0.6px #eb5a46; }
   header .wrsocial {
     margin-right: 60px !important; }
+
+  #art {
+    width: 60vw;
+    display: flex;
+    margin: auto;
+    position: relative; }
+    #art > * {
+      width: 100%; }
+    #art .similar-article {
+      position: relative;
+      width: 100vw;
+      margin-left: -20vw;
+      display: flex;
+      flex-flow: row wrap; }
+      #art .similar-article > h3 {
+        width: 100%; }
+      #art .similar-article article {
+        width: 33.3333%; }
 
   #homepage main article {
     width: 33.3333333%; }
