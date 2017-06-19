@@ -146,11 +146,11 @@
 
 
       <!-- écriture de la partie principale -->
-      <main>
+      <main id="art">
 
         <article class="article-content">
 
-          <h3> Shadow | l'ordinateur du cloud</h3>
+          <h3> SHADOW <br> L'ordinateur du cloud</h3>
           <h4>Cocorico, un beau pari bien de chez nous !</h4>
 
 
@@ -165,19 +165,24 @@
           </div>
 
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </em> <br><br>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
           <img src="../img/article-n-illu1.jpg" alt="logo de l'image">
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Ut enim ad minim </span>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
           <img src="../img/article-n-illu2.jpg" alt="gameur sur son pc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <span>Ut enim ad minim </span> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <ul>
+              <li>Bla</li>
+              <li>Bla</li>
+              <li>Bla</li>
+            </ul>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
           <img src="../img/article-n-illu3.jpg" alt="Boitier shadow">
@@ -188,8 +193,41 @@
         <aside class="commz">
           <h4>Commentaires</h4>
           <p>.. commentaires</p>
-          <button type="button" name="button">Lire les comm'</button>
-          <button type="button" name="button">Donnez votre avis</button>
+
+          <a href="#touslescomms">
+             <button type="button" name="button">Lire les comm'</button>
+          </a>
+
+          <button type="button" name="button"  data-toggle="modal" data-target="#rechercheModal1" data-backdrop="false" aria-hidden="true">Donnez votre avis</button>
+
+
+          <!-- content modal laisser un commentaire -->
+          <div class="modal fade" id="rechercheModal1" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <div class="modal-dialog" role="document">
+
+              <div class="modal-content">
+
+
+                <form class="modalpourcommentaire" action="index.html" method="post">
+                  <h4>Ecrire un commentaire</h4>
+                  <input type="text" name="" value="" placeholder="Votre pseudo" required>
+                  <input type="mail" name="" value="" placeholder="Votre email" required>
+                  <textarea name="name" required>
+                  </textarea>
+                  <input type="submit" name="" value="Envoyer">
+                </form>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </aside>
 
         <aside class="similar-article">
@@ -263,6 +301,27 @@
 
         </aside>
 
+        <div id="touslescomms">
+
+          <div>
+            <p><span>Par ...</span><span>Le ../../..</span></p>
+            <p>blablablablablablablablablabla <br>blablablablablablablablablabla <br>blablablablablablablablablabla</p>
+          </div>
+
+
+          <div>
+            <p><span>Par ...</span><span>Le ../../..</span></p>
+            <p>blablablablablablablablablabla <br>blablablablablablablablablabla <br>blablablablablablablablablabla</p>
+          </div>
+
+
+          <div>
+            <p><span>Par ...</span><span>Le ../../..</span></p>
+            <p>blablablablablablablablablabla <br>blablablablablablablablablabla <br>blablablablablablablablablabla</p>
+          </div>
+
+
+        </div>
       </main>
 
 

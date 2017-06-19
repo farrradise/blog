@@ -116,35 +116,51 @@ header {
     bottom: 0;
     height: auto;
     z-index: 3; }
-  header #rechercheModal {
-    width: 80vw;
-    max-width: 400px;
-    height: 310px;
-    margin: 50px auto;
-    padding-top: 15px;
-    background-color: #eb5a46;
-    border-radius: 20px; }
-    header #rechercheModal > div > button {
+
+#rechercheModal, #rechercheModal1 {
+  width: 80vw;
+  max-width: 400px;
+  height: 310px;
+  margin: 50px auto;
+  padding-top: 15px;
+  background-color: #eb5a46;
+  border-radius: 20px; }
+  #rechercheModal > div > button, #rechercheModal1 > div > button {
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    font-size: 30px; }
+  #rechercheModal .modal-content, #rechercheModal1 .modal-content {
+    background-color: inherit;
+    border: none;
+    font-weight: bold; }
+    #rechercheModal .modal-content p, #rechercheModal1 .modal-content p {
       text-align: center;
-      padding: 10px 20px;
       color: white;
-      font-size: 30px; }
-    header #rechercheModal .modal-content {
-      background-color: inherit;
-      border: none;
-      font-weight: bold; }
-      header #rechercheModal .modal-content p {
-        text-align: center;
-        color: white;
-        font-weight: bold;
-        padding: 10px 0 0 0; }
-      header #rechercheModal .modal-content form {
-        margin: auto;
-        display: flex;
-        flex-flow: column; }
-        header #rechercheModal .modal-content form select {
-          width: 200px;
-          color: #eb5a46; }
+      font-weight: bold;
+      padding: 10px 0 0 0; }
+    #rechercheModal .modal-content form, #rechercheModal1 .modal-content form {
+      margin: auto;
+      display: flex;
+      flex-flow: column; }
+      #rechercheModal .modal-content form select, #rechercheModal .modal-content form input, #rechercheModal .modal-content form textarea, #rechercheModal1 .modal-content form select, #rechercheModal1 .modal-content form input, #rechercheModal1 .modal-content form textarea {
+        width: 200px;
+        color: #eb5a46; }
+      #rechercheModal .modal-content form textarea, #rechercheModal1 .modal-content form textarea {
+        min-height: 90px; }
+    #rechercheModal .modal-content .modalpourcommentaire h4, #rechercheModal1 .modal-content .modalpourcommentaire h4 {
+      color: white;
+      margin-top: -20px;
+      border-bottom: 2px solid white;
+      font-size: 55px;
+      font-family: "Wild"; }
+    #rechercheModal .modal-content .modalpourcommentaire ~ button, #rechercheModal1 .modal-content .modalpourcommentaire ~ button {
+      position: absolute;
+      right: 0;
+      top: -30px;
+      font-size: 40px; }
+    #rechercheModal .modal-content .modalpourcommentaire *, #rechercheModal1 .modal-content .modalpourcommentaire * {
+      margin: 5px auto; }
 
 #general-category main {
   margin-top: 3em; }
@@ -202,6 +218,23 @@ main {
   main article a:hover figcaption {
     opacity: 0;
     transition: 0.5s; }
+
+#art {
+  display: flex;
+  flex-flow: column;
+  width: 100%; }
+  #art h3 {
+    color: #eb5a46;
+    text-align: center;
+    border-bottom: 2px solid #eb5a46;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em; }
+  #art .article-content {
+    padding: 15px;
+    text-align: justify; }
+    #art .article-content img {
+      width: 90%;
+      margin: auto 5%; }
 
 footer {
   color: white;
