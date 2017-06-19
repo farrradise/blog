@@ -262,7 +262,6 @@ main {
     #art .article-content > p:first-of-type {
       font-style: italic;
       background-color: #eb5a46;
-      opacity: 0.6;
       margin-top: 30px;
       padding: 20px;
       color: white;
