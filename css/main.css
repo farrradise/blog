@@ -31,7 +31,8 @@ header {
     display: flex;
     justify-content: space-between;
     min-height: 50px;
-    border: 1px solid #9ac880; }
+    border: 1px solid #9ac880;
+    margin-top: 0 !important; }
     header .fixedpart #navigation > i {
       font-size: 22px;
       width: 200px;
