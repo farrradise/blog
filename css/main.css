@@ -30,7 +30,8 @@ header {
     background-color: #9ac880;
     display: flex;
     justify-content: space-between;
-    min-height: 50px; }
+    min-height: 50px;
+    border: 1px solid #9ac880; }
     header .fixedpart #navigation > i {
       font-size: 22px;
       width: 200px;
