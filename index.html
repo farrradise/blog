@@ -159,9 +159,9 @@
         <article>
           <a href="html/article-n.html">
             <figure>
-              <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clic !">
-              <figcaption>
-                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+              <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clique pour plus d'infos !" onmouseover="imgHover(this)" onmouseout="imgHover(this)" id="img1">
+              <figcaption onmouseover="imgHover(this)" onmouseout="imgHover(this)">
+                <h3 id="art1">SHADOW, l'ordinateur dans le cloud</h3>
                 <h4>Cocorico, un beau pari de chez nous</h4>
 
                 <div class="details-article">
@@ -182,9 +182,9 @@
         <article>
           <a href="html/article-n.html">
             <figure>
-              <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clic !">
-              <figcaption>
-                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+              <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clique pour plus d'infos !" onmouseover="imgHover(this)" onmouseout="imgHover(this)" id="img2">
+              <figcaption onmouseover="imgHover(this)" onmouseout="imgHover(this)">
+                <h3 id="art2">SHADOW, l'ordinateur dans le cloud</h3>
                 <h4>Cocorico, un beau pari de chez nous</h4>
                 <div class="details-article">
 
@@ -204,9 +204,9 @@
         <article>
           <a href="html/article-n.html">
             <figure>
-              <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clic !">
-              <figcaption>
-                <h3>SHADOW, l'ordinateur dans le cloud</h3>
+              <img src="img/article-n-sm" srcset="img/article-n-sm.jpg 240w, img/article-n.jpg 566w" sizes="(max-width: 768px) 100vw, 30vw" alt="Clique pour plus d'infos !" onmouseover="imgHover(this)" onmouseout="imgHover(this)" id="img3">
+              <figcaption onmouseover="imgHover(this)" onmouseout="imgHover(this)">
+                <h3 id="art3">SHADOW, l'ordinateur dans le cloud</h3>
                 <h4>Cocorico, un beau pari de chez nous</h4>
                 <div class="details-article">
 
@@ -231,19 +231,25 @@
       <footer>
         <p> blog créé par <span>@farrradise</span> | marzini.f@gmail.com</p>
  <!-- y mettre les secondes, une rubrique contact + date du jour avec un tabs avec icone horloge/sablier et calendrier  -->
-        <ul class="nav nav-pills">
+        <div>
+          <ul class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link active" href="#">
+            <button class="nav-link active" href="#" onclick="openCity(event, 'secondes')">
               <i class="fa fa-hourglass-end" aria-hidden="true"></i>
-            </a>
+            </button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <button class="nav-link" href="#" onclick="openCity(event, 'dateetheure')">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-            </a>
+            </button>
           </li>
 
         </ul>
+          <div>
+            <p id="secondes" class="tabcontent">secondes</p>
+            <p id="dateetheure" class="tabcontent">heure</p>
+          </div>
+        </div>
       </footer>
 
 

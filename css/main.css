@@ -169,6 +169,14 @@ header {
 #general-category main {
   margin-top: 3em; }
 
+#derniersbillets article a:hover h3 {
+  color: white;
+  text-shadow: 0px 1px 1px #eb5a46;
+  font-weight: bold;
+  display: block;
+  font-size: 25px;
+  text-align: center; }
+
 main {
   width: 100vw;
   background-color: white;
@@ -195,8 +203,7 @@ main {
       -webkit-filter: grayscale(80%); }
     main article figure figcaption {
       transition: 1s;
-      background-color: white;
-      opacity: 0.8;
+      background-color: rgba(255, 255, 255, 0.7);
       padding: 5px 2px;
       position: absolute;
       overflow: hidden;
@@ -221,8 +228,10 @@ main {
     transform: scale(1.05);
     transition: 0.5s; }
   main article a:hover figcaption {
-    opacity: 0;
-    transition: 0.5s; }
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0); }
+    main article a:hover figcaption * {
+      color: rgba(255, 255, 255, 0); }
 
 #art {
   display: flex;
@@ -317,6 +326,8 @@ footer {
   footer .nav {
     margin: auto;
     width: 100px; }
+    footer .nav .nav-link:not(.active) {
+      background-color: #9ac880; }
     footer .nav .nav-item .active {
       background-color: #eb5a46; }
     footer .nav .active:hover i {
