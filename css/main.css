@@ -328,7 +328,7 @@ footer {
     width: 100px; }
     footer .nav .nav-link:not(.active) {
       background-color: #9ac880; }
-    footer .nav .nav-item .active {
+    footer .nav .tablinks .active {
       background-color: #eb5a46; }
     footer .nav .active:hover i {
       color: white; }

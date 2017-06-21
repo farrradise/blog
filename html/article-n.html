@@ -14,7 +14,7 @@
         <!-- Place favicon.ico in the root directory -->
         <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body id="general-category">
+    <body id="general-category" onload="changeState()">
 
       <!-- ECRITURE DU HEADER  -->
 
@@ -331,19 +331,26 @@
       <footer>
         <p> blog créé par <span>@farrradise</span> | marzini.f@gmail.com</p>
  <!-- y mettre les secondes, une rubrique contact + date du jour avec un tabs avec icone horloge/sablier et calendrier  -->
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              <i class="fa fa-hourglass-end" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-            </a>
-          </li>
+        <div>
+          <ul class="nav nav-pills tab">
+            <li class="tablinks">
+              <button class="nav-link" href="#" onclick="testTab(event, 'secondes')">
+                <i class="fa fa-hourglass-end" aria-hidden="true"></i>
+              </button>
+            </li>
+            <li class="tablinks" onclick="pourDate()">
+              <button class="nav-link" href="#" onclick="testTab(event, 'dateetheure')">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+              </button>
+            </li>
 
-        </ul>
+          </ul>
+
+          <div>
+            <p id="secondes" class="tabcontent"><span id="my_timer">00:00:00</span></p>
+            <div id="dateetheure" class="tabcontent"><p id="laDate"></p></div>
+          </div>
+        </div>
       </footer>
 
 
