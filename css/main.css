@@ -323,16 +323,24 @@ footer {
     color: #eb5a46;
     font-weight: bold;
     font-style: italic; }
+  footer > div {
+    color: #eb5a46;
+    font-weight: bold; }
+    footer > div ul {
+      display: flex;
+      justify-content: space-around; }
+    footer > div > div {
+      padding-top: 1em; }
   footer .nav {
     margin: auto;
     width: 100px; }
     footer .nav .nav-link:not(.active) {
-      background-color: #9ac880; }
+      background-color: #eb5a46;
+      color: white; }
     footer .nav .tablinks .active {
       background-color: #eb5a46; }
-    footer .nav .active:hover i {
-      color: white; }
     footer .nav .nav-link:hover {
+      background-color: #9ac880;
       color: #eb5a46; }
 
 @media (min-width: 768px) {
