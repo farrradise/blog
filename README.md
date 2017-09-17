@@ -8,11 +8,11 @@ Html | CSS | JS | PHP | LAMP
 
 
 Etapes du projet :
-* Installation serveur local (lamp) : apache, php 7, mysql, php myadmin
-* Création d'un dossier de travail avec un wordpress local. En se rendant sur
+* OK | Installation serveur local (lamp) : apache, php 7, mysql, php myadmin
+* OK | Création d'un dossier de travail avec un wordpress local. En se rendant sur
 localhost/nomdudossier ils doivent trouver la page d'acceuil du thème par défaut.
-* Réalisation du front HTML/CSS, prévoir un découpage propre, header, footer, aside, corps de page
-* Insérer du DOM en JavaScript pur dans le front :
+* OK | Réalisation du front HTML/CSS, prévoir un découpage propre, header, footer, aside, corps de page
+* OK | Insérer du DOM en JavaScript pur dans le front :
   - Evenement au hover (uniquement du JavaScript) : quand l'utilisateur survole une image, la
   valeur de l'attribut alt est affichée sur la page
   - Présence obligatoire d'un formulaire, quand l'utilisateur clique sur envoyer la page lui
@@ -21,7 +21,7 @@ localhost/nomdudossier ils doivent trouver la page d'acceuil du thème par défa
   - Afficher quelque part sur le site le nombre de secondes que le visiteur a passées sur la page
   - Créer une table intéractive avec plusieurs onglets, au clique sur un onglet on affiche le bon
   contenu
-* Création d'un thème WordPress basé sur la maquette HTML/CSS
+* PAS OK |Création d'un thème WordPress basé sur la maquette HTML/CSS
   - Installation du thème dans le dossier WordPress
   - Découpage du template (réalisation des includes)
   - Ajout CSS/JS/IMG
